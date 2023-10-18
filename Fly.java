@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-public class Flappybird extends Actor
+public class Fly extends Actor
 {
     private double g = 1; 
     private int y = 300;
@@ -7,7 +7,7 @@ public class Flappybird extends Actor
     private boolean isalive = true;
     private boolean isacross = false;
     private boolean hasaddscore = false; //Nilai awal artinya belum ditambah terlalu banyak
-    public Flappybird(){
+    public Fly(){
         GreenfootImage image = getImage();
         image.scale(50, 40);
     }
@@ -39,7 +39,7 @@ public class Flappybird extends Actor
     //Mengembalikan apabila spasi ditekan
     public boolean spacePressed(){
         boolean pressed = false;
-        if(Greenfoot.isKeyDown("space")){
+        if(Greenfoot.isKeyDown("enter")){
             if(!haspressed){//Jika belum melepaskan spasi, jangan kembali true
                 pressed = true;
             }

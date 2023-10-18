@@ -15,7 +15,7 @@ public class Pipe extends Actor
         // Add your action code here.
          setLocation(getX() - 1, getY());
          if(getX() <= 1){
-            setLocation(getX() + 600, Greenfoot.getRandomNumber(250)+50);
+            setLocation(getX() + 600, Greenfoot.getRandomNumber(250)+60);
         }
     }    
 }
